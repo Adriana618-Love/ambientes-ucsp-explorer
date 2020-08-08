@@ -1,6 +1,6 @@
 const { getBody, getStringifiedBody } = require('./body-parser')
 const querystring = require('querystring')
-
+const moment = require('moment')
 
 describe('getBody: Should process all arguments', () => {
 	it('test 1', () => {
@@ -8,7 +8,7 @@ describe('getBody: Should process all arguments', () => {
 			campus: 2,
 			type: 1,
 			room: 188,
-			day: new Date()
+			date: moment('2020-05-09', 'YYYY-MM-DD')
 		}
 
 		expect(getBody(options)).toEqual(
@@ -19,16 +19,17 @@ describe('getBody: Should process all arguments', () => {
 					'ddl_campus': '2',
 					'ddl_tipo': '1',
 					'ddl_ambiente': '188',
-					'__CALLBACKPARAM': expect.objectContaining({
-						'data': {
-							'start': '2020-05-04T00:00:00',
-							'end': '2020-05-11T00:00:00',
-							'days': 7,
-							'day': '2020-05-09T00:00:00',
-						},
-					}),
 				},
 			),
+		)
+
+		expect(getBody(options)['__CALLBACKPARAM'].data).toEqual(
+			expect.objectContaining({
+				'start': '2020-05-04T00:00:00',
+				'end': '2020-05-11T00:00:00',
+				'days': 7,
+				'day': '2020-05-09T00:00:00',
+			})
 		)
 	})
 
@@ -37,6 +38,7 @@ describe('getBody: Should process all arguments', () => {
 			campus: 1,
 			type: 2,
 			room: 77,
+			date: moment('2020-05-11', 'YYYY-MM-DD')
 		}
 
 		expect(getBody(options)).toEqual(
@@ -46,17 +48,18 @@ describe('getBody: Should process all arguments', () => {
 					'hf_ambiente': '77',
 					'ddl_campus': '1',
 					'ddl_tipo': '2',
-					'ddl_ambiente': '77',
-					'__CALLBACKPARAM': expect.objectContaining({
-						'data': {
-							'start': '2020-05-04T00:00:00',
-							'end': '2020-05-11T00:00:00',
-							'days': 7,
-							'day': '2020-05-09T00:00:00',
-						},
-					}),
+					'ddl_ambiente': '77'
 				},
 			),
+		)
+
+		expect(getBody(options)['__CALLBACKPARAM'].data).toEqual(
+			expect.objectContaining({
+				'start': '2020-05-11T00:00:00',
+				'end': '2020-05-18T00:00:00',
+				'days': 7,
+				'day': '2020-05-11T00:00:00',
+			})
 		)
 	})
 })
@@ -67,7 +70,8 @@ describe('getStringifiedBody: Should match with original', () => {
 		const options = {
 			campus: 2,
 			type: 1,
-			room: 188
+			room: 188,
+			date: moment('2020-05-09', 'YYYY-MM-DD')
 		}
 
 		expect(querystring.parse(getStringifiedBody(options)))

@@ -1,4 +1,5 @@
 const getSchedule = require('./get-schedule')
+const moment = require('moment')
 
 const campus = {
 	"SUCRE": 1,
@@ -14,7 +15,8 @@ it('Should get schedule by room id', () => {
 	const options = {
 		campus: campus["CAMPINIA"],
 		type: types["CLASSROOM"],
-		room: 188
+		room: 188,
+		date: moment('2020-05-09', 'YYYY-MM-DD')
 	}
 
 	return getSchedule(options)
