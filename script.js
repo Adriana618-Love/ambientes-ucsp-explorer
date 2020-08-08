@@ -1,20 +1,13 @@
-const getSchedule = require('./scripts/get-schedule')
+const { getRoomData, getSchedule } = require('./scripts/get-schedule')
+const moment = require('moment')
 
-const campus = {
-	"SUCRE": 1,
-	"CAMPINIA": 2
-}
 
-const types = {
-	"CLASSROOM": 1,
-	"LABORATORY": 2
-}
+const roomData = getRoomData('N419  (Cap.: 24)')
 
 const options = {
-	campus: campus["CAMPINIA"],
-	type: types["CLASSROOM"],
-	room: 188
+	...roomData,
+	date: moment('2020-05-09', 'YYYY-MM-DD')
 }
 
-getSchedule(options)
+return getSchedule(options)
 	.then(console.log)

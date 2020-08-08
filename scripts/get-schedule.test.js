@@ -1,24 +1,39 @@
-const getSchedule = require('./get-schedule')
 const moment = require('moment')
 
-const campus = {
-	"SUCRE": 1,
-	"CAMPINIA": 2
-}
+const { getSchedule, getRoomData } = require('./get-schedule')
 
-const types = {
-	"CLASSROOM": 1,
-	"LABORATORY": 2
-}
+const { campus, types } = require('./constants')
 
 it('Should get schedule by room id', () => {
+	const roomData = getRoomData('N419  (Cap.: 24)')
+
 	const options = {
-		campus: campus["CAMPINIA"],
-		type: types["CLASSROOM"],
-		room: 188,
+		...roomData,
 		date: moment('2020-05-09', 'YYYY-MM-DD')
 	}
 
 	return getSchedule(options)
 		.then(console.log)
 }, 10000)
+
+
+
+describe('Get Room Data', () => {
+	it('Should process an "Aula"', () => {
+		expect(getRoomData('B01  (Cap.: 40)')).toEqual({
+			room: 126,
+			type: types["Aula"],
+			campus: campus["Campiña Paisajista"],
+		})
+	})
+
+	it('Should process an "Laboratorio"', () => {
+		expect(getRoomData('N419  (Cap.: 24)')).toEqual({
+			room: 39,
+			type: types["Laboratorio"],
+			campus: campus["Campiña Paisajista"],
+		})
+	})
+})
+
+

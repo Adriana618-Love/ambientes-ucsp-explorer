@@ -2,431 +2,517 @@
     {
       "codigo": 126,
       "nombre": "B01  (Cap.: 40)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 127,
       "nombre": "B02  (Cap.: 40)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 166,
       "nombre": "B03  (Cap.: 40)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 128,
       "nombre": "B101  (Cap.: 41)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 129,
       "nombre": "B102  (Cap.: 44)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 158,
       "nombre": "B103  (Cap.: 40)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 157,
       "nombre": "B104  (Cap.: 40)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 168,
       "nombre": "B105  (Cap.: 40)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 132,
       "nombre": "B201  (Cap.: 40)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 133,
       "nombre": "B202  (Cap.: 40)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 152,
       "nombre": "B203  (Cap.: 40)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 165,
       "nombre": "B204  (Cap.: 40)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 134,
       "nombre": "B304  (Cap.: 40)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 135,
       "nombre": "B305  (Cap.: 40)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 167,
       "nombre": "B306  (Cap.: 40)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 102,
       "nombre": "D01  (Cap.: 80)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 111,
       "nombre": "D02  (Cap.: 40)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 142,
       "nombre": "D03  (Cap.: 50)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 112,
       "nombre": "D04  (Cap.: 50)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 120,
       "nombre": "D05  (Cap.: 50)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 114,
       "nombre": "D06  (Cap.: 80)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 103,
       "nombre": "D101  (Cap.: 80)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 108,
       "nombre": "D102  (Cap.: 50)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 162,
       "nombre": "Módulo Biblioteca 1  (Cap.: 6)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 163,
       "nombre": "Módulo Biblioteca 2  (Cap.: 6)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 31,
       "nombre": "N011  (Cap.: 30)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 36,
       "nombre": "N02  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 35,
       "nombre": "N05  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 34,
       "nombre": "N06  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 33,
       "nombre": "N07  (Cap.: 40)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 53,
       "nombre": "N108  (Cap.: 34)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 55,
       "nombre": "N110  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 74,
       "nombre": "N113  (Cap.: 60)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 57,
       "nombre": "N114  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 59,
       "nombre": "N115  (Cap.: 50)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 71,
       "nombre": "N202  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 76,
       "nombre": "N203  (Cap.: 40)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 69,
       "nombre": "N204  (Cap.: 12)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 64,
       "nombre": "N205  (Cap.: 34)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 67,
       "nombre": "N206  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 116,
       "nombre": "N207  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 65,
       "nombre": "N208  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 63,
       "nombre": "N210  (Cap.: 12)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 87,
       "nombre": "N302  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 82,
       "nombre": "N303  (Cap.: 12)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 83,
       "nombre": "N305  (Cap.: 50)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 84,
       "nombre": "N306  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 89,
       "nombre": "N307  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 85,
       "nombre": "N308  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 90,
       "nombre": "N309  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 156,
       "nombre": "N310  (Cap.: 12)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 86,
       "nombre": "N314  (Cap.: 50)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 91,
       "nombre": "N315  (Cap.: 50)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 118,
       "nombre": "N316  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 117,
       "nombre": "N318  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 119,
       "nombre": "N319  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 159,
       "nombre": "N321  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 130,
       "nombre": "N322  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 160,
       "nombre": "N323  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 100,
       "nombre": "N401  (Cap.: 50)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 101,
       "nombre": "N402  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 99,
       "nombre": "N403  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 97,
       "nombre": "N405  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 98,
       "nombre": "N406  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 96,
       "nombre": "N408  (Cap.: 40)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 95,
       "nombre": "N409  (Cap.: 30)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 32,
       "nombre": "N413  (Cap.: 35)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 186,
       "nombre": "N414  (Cap.: 50)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 187,
       "nombre": "N417  (Cap.: 50)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 188,
       "nombre": "N418  (Cap.: 50)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 189,
       "nombre": "P-102  (Cap.: 30)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 79,
       "nombre": "Sala de Consejo  (Cap.: 4)",
-      "ambiente": "Aula"
+      "ambiente": "Aula",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 109,
       "nombre": "D103  (Cap.: 40)",
-      "ambiente": "Laboratorio"
+      "ambiente": "Laboratorio",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 183,
       "nombre": "D104  (Cap.: 40)",
-      "ambiente": "Laboratorio"
+      "ambiente": "Laboratorio",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 184,
       "nombre": "D106  (Cap.: 35)",
-      "ambiente": "Laboratorio"
+      "ambiente": "Laboratorio",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 141,
       "nombre": "Laboratorio Móvil B  (Cap.: 25)",
-      "ambiente": "Laboratorio"
+      "ambiente": "Laboratorio",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 136,
       "nombre": "N01 (Lab. A.F.S.D.)  (Cap.: 16)",
-      "ambiente": "Laboratorio"
+      "ambiente": "Laboratorio",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 61,
       "nombre": "N04 (Lab. E. C.)  (Cap.: 10)",
-      "ambiente": "Laboratorio"
+      "ambiente": "Laboratorio",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 138,
       "nombre": "N08 (Lab. CAR)  (Cap.: 12)",
-      "ambiente": "Laboratorio"
+      "ambiente": "Laboratorio",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 77,
       "nombre": "N215 (Lab. Motorola)  (Cap.: 24)",
-      "ambiente": "Laboratorio"
+      "ambiente": "Laboratorio",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 131,
       "nombre": "N412  (Cap.: 25)",
-      "ambiente": "Laboratorio"
+      "ambiente": "Laboratorio",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 185,
       "nombre": "N415  (Cap.: 25)",
-      "ambiente": "Laboratorio"
+      "ambiente": "Laboratorio",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 39,
       "nombre": "N419  (Cap.: 24)",
-      "ambiente": "Laboratorio"
+      "ambiente": "Laboratorio",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 190,
       "nombre": "P-103  (Cap.: 20)",
-      "ambiente": "Laboratorio"
+      "ambiente": "Laboratorio",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 194,
       "nombre": "P103  (Cap.: 30)",
-      "ambiente": "Laboratorio"
+      "ambiente": "Laboratorio",
+      "campus": "Campiña Paisajista"
     },
     {
       "codigo": 191,
       "nombre": "P-104  (Cap.: 30)",
-      "ambiente": "Laboratorio"
+      "ambiente": "Laboratorio",
+      "campus": "Campiña Paisajista"
     }
 ]

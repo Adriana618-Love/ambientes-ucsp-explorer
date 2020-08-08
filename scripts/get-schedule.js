@@ -2,6 +2,10 @@ const fetch = require('node-fetch')
 
 const { getStringifiedBody } = require('./body-parser')
 
+const { campus, types } = require('./constants')
+
+const rooms = require('../rooms.json')
+
 function getSchedule(options) {
   return new Promise((resolve, reject) =>
     fetch("https://consultambientes.ucsp.edu.pe/", {
@@ -29,4 +33,23 @@ function getSchedule(options) {
   )
 }
 
-module.exports = getSchedule
+const assignBy = key => (data, item) => {
+	data[item[key]] = item;
+	return data;
+}
+
+const normalizedRooms = rooms.reduce(assignBy("nombre"), {});
+
+const getRoomData = (name) => {
+  const room = normalizedRooms[name]
+  return {
+    room: room['codigo'],
+    type: types[room['ambiente']],
+    campus: campus[room['campus']]
+  }
+}
+
+module.exports = {
+  getSchedule,
+  getRoomData
+}
