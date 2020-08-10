@@ -40,24 +40,21 @@ const assignBy = key => (data, item) => {
 
 const normalizedRooms = rooms.reduce(assignBy("nombre"), {});
 
-const getRoomData = (roomName) => {
+const getRoomData = (roomName, date) => {
   const room = normalizedRooms[roomName]
   return {
     room: room['codigo'],
     type: types[room['ambiente']],
-    campus: campus[room['campus']]
+    campus: campus[room['campus']],
+    date
   }
 }
 
-const getSchedule = (roomName, date) => {
-  return fetchSchedule({
-    ...getRoomData(roomName),
-    date,
-  })
+const getWeekSchedule = (roomName, date) => {
+  return fetchSchedule(getRoomData(roomName, date))
 }
 
 module.exports = {
-  fetchSchedule,
-  getSchedule,
+  getWeekSchedule,
   getRoomData
 }
