@@ -2,7 +2,6 @@ const querystring = require('query-string')
 const body = require('../body.json')
 
 const getBody = ({ campus, type, room, date }) => {
-
 	return {
 		...body,
 		"ddl_campus": String(campus),
