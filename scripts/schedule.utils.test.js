@@ -1,7 +1,7 @@
 const moment = require('moment')
 
 const { getRoomData, getWeekSchedule } = require('./schedule.utils')
-const testSchedule = require('../TestSchedule')
+const ExampleSchedule = require('../test/ExampleSchedule')
 
 const { campus, types } = require('./constants')
 
@@ -11,7 +11,7 @@ describe('Schedule', () => {
 		expect.assertions(1)
 		return getWeekSchedule('N419  (Cap.: 24)', moment('2020-05-09', 'YYYY-MM-DD'))
 			.then(schedule => {
-				expect(schedule).toEqual(testSchedule)
+				expect(schedule).toEqual(ExampleSchedule)
 			})
 	}, 10000)
 })

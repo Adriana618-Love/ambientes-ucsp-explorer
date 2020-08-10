@@ -1,11 +1,27 @@
 const moment = require('moment')
-
 const querystring = require('querystring')
 
-const { getBody, getStringifiedBody } = require('./body-parser')
+const { fetchSchedule, getBody, getStringifiedBody } = require('./fetch-schedule')
 
-describe('getBody', () => {
-	it('Should get the body for the usage', () => {
+const ExampleSchedule = require('../test/ExampleSchedule')
+
+describe('fetch Schedule from the UCSP api', () => {
+	it('Should get the schedule given an day', () => {
+		const options = {
+			campus: 2,
+			type: 2,
+			room: 39,
+			date: moment('2020-05-09', 'YYYY-MM-DD')
+		}
+
+		expect.assertions(1)
+		return fetchSchedule(options)
+			.then(schedule => expect(schedule).toEqual(ExampleSchedule))
+	})
+})
+
+describe('Should get the body for the usage for the fetch schedule', () => {
+	it('Test 1', () => {
 		const options = {
 			campus: 2,
 			type: 1,
@@ -24,7 +40,6 @@ describe('getBody', () => {
 				},
 			),
 		)
-
 		expect(getBody(options)['__CALLBACKPARAM'].data).toEqual({
 			'start': '2020-05-04T00:00:00',
 			'end': '2020-05-11T00:00:00',
@@ -52,7 +67,6 @@ describe('getBody', () => {
 				},
 			),
 		)
-
 		expect(getBody(options)['__CALLBACKPARAM'].data).toEqual({
 			'start': '2020-05-11T00:00:00',
 			'end': '2020-05-18T00:00:00',

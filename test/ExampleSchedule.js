@@ -1,4 +1,4 @@
-const testSchedule = {
+const exampleSchedule = {
 	ClientState: null,
 	CallBackData: null,
 	Hashes: {
@@ -792,4 +792,4 @@ const testSchedule = {
 	UpdateType: 'EventsOnly'
 }
 
-module.exports = testSchedule
+module.exports = exampleSchedule

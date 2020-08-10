@@ -1,4 +1,4 @@
-const testSchedule = require('../TestSchedule')
+const testSchedule = require('../test/ExampleSchedule')
 const { isFree } = require('./is-free')
 
 describe('Test if an room is free by the date', () => {
