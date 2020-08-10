@@ -6,11 +6,11 @@ describe('Test if an room is free by the date', () => {
 		expect(isFree(testSchedule, new Date('2020-05-07 6:59:00'))).toBe(true)
 	})
 
-	test('When begin an class, then the room its not ocupped', () => {
+	test('When begin an class, then the room its not occupied', () => {
 		expect(isFree(testSchedule, new Date('2020-05-07 8:30:00'))).toBe(false)
 	})
 
-	it('When the class is almost over, then the room its still ocupped', () => {
+	it('When the class is almost over, then the room its still occupied', () => {
 		expect(isFree(testSchedule, new Date('2020-05-07 10:00:00'))).toBe(false)
 	})
 })

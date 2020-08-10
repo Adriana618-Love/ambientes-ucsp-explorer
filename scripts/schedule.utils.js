@@ -6,7 +6,7 @@ const { campus, types } = require('./constants')
 
 const rooms = require('../rooms.json')
 
-function getSchedule(options) {
+function fetchSchedule(options) {
   return new Promise((resolve, reject) =>
     fetch("https://consultambientes.ucsp.edu.pe/", {
       "headers": {
@@ -40,8 +40,8 @@ const assignBy = key => (data, item) => {
 
 const normalizedRooms = rooms.reduce(assignBy("nombre"), {});
 
-const getRoomData = (name) => {
-  const room = normalizedRooms[name]
+const getRoomData = (roomName) => {
+  const room = normalizedRooms[roomName]
   return {
     room: room['codigo'],
     type: types[room['ambiente']],
@@ -49,7 +49,15 @@ const getRoomData = (name) => {
   }
 }
 
+const getSchedule = (roomName, date) => {
+  return fetchSchedule({
+    ...getRoomData(roomName),
+    date,
+  })
+}
+
 module.exports = {
+  fetchSchedule,
   getSchedule,
   getRoomData
 }

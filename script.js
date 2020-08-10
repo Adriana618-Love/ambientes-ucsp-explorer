@@ -1,10 +1,5 @@
-const { getRoomData, getSchedule } = require('./scripts/get-schedule')
+const { getSchedule } = require('./scripts/schedule.utils')
 const moment = require('moment')
 
-const options = {
-	...getRoomData('N419  (Cap.: 24)'),
-	date: moment('2020-05-09', 'YYYY-MM-DD')
-}
-
-getSchedule(options)
+getSchedule('N419  (Cap.: 24)', moment('2020-05-09', 'YYYY-MM-DD'))
 	.then(console.log)
