@@ -1,7 +1,5 @@
-const { getSchedule } = require('./scripts/schedule.utils')
+const { getSchedule, isFree } = require('./scripts/schedule.utils')
 const moment = require('moment')
-
-const { isFree } = require('./scripts/is-free')
 
 getSchedule('N419  (Cap.: 24)', moment('2020-05-07', 'YYYY-MM-DD'))
 	.then(schedule => {

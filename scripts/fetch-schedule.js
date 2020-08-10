@@ -1,7 +1,7 @@
 const fetch = require('node-fetch')
 const querystring = require('query-string')
 
-const body = require('../body.json')
+const body = require('../assets/body.json')
 
 const fetchSchedule = options =>
 	new Promise((resolve, reject) =>
