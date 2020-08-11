@@ -10,26 +10,45 @@ const { campus, types } = require('./constants')
 const rooms = require('../assets/rooms.json')
 
 
-const assignBy = key => (data, item) => {
-	data[item[key]] = item
-	return data
+const normalizeArray = (arr, prop) => {
+	const assignBy = key => (data, item) => {
+		data[item[key]] = item
+		return data
+	}
+
+	return arr.reduce(assignBy(prop), {})
 }
 
-const normalizedRooms = rooms.reduce(assignBy('nombre'), {})
+const normalizedRooms = normalizeArray(rooms, 'nombre')
 
-const getRoomData = (roomName, date) => {
+const getRoomData = (roomName, day) => {
 	const room = normalizedRooms[roomName]
 	return {
 		room: room['codigo'],
 		type: types[room['ambiente']],
 		campus: campus[room['campus']],
-		date,
+		date: day,
 	}
 }
 
 const getWeekSchedule = (roomName, date) => {
 	return fetchSchedule(getRoomData(roomName, date))
 }
+
+const fetchAndSaveAllSchedules = (day, file) =>
+	map(rooms, (room, callback) => {
+		getWeekSchedule(room.nombre, day)
+			.then(schedule => {
+				return callback(null, {
+					...schedule,
+					roomName: room.nombre
+				})
+			})
+	})
+		.then(allRoomsSchedules => {
+			const normalizedSchedules = normalizeArray(allRoomsSchedules, 'roomName')
+			return jsonfile.writeFile(file, normalizedSchedules)
+		})
 
 const isFree = (schedule, hourToCheck) => {
 	for (const event of schedule['Events']) {
@@ -43,21 +62,6 @@ const isFree = (schedule, hourToCheck) => {
 	return true
 }
 
-const fetchAndSaveAllSchedules = (day, file) =>
-	map(rooms, (room, callback) => {
-		getWeekSchedule(room.nombre, day)
-			.then(schedule => {
-				return callback(null, {
-					...schedule,
-					roomName: room.nombre
-				})
-			})
-	})
-		.then(allRoomsSchedule => {
-			const normalizedSchedules = allRoomsSchedule.reduce(assignBy('roomName'), {})
-			return jsonfile.writeFile(file, normalizedSchedules)
-		})
-
 const getSchedules = (day, file, onFetch) => {
 	if (fs.existsSync(file)) {
 		return jsonfile.readFile(file)
@@ -70,10 +74,16 @@ const getSchedules = (day, file, onFetch) => {
 	}
 }
 
+const getAllRoomsAvailable = (day, file, hour, onFetch) =>
+	getSchedules(day, file, onFetch)
+		.then(schedules => Object.values(schedules).filter(schedule => isFree(schedule, hour)))
+		.then(schedules => schedules.map(schedule => schedule.roomName))
+
 module.exports = {
+	getAllRoomsAvailable,
+	isFree,
+	getSchedules,
+	fetchAndSaveAllSchedules,
 	getWeekSchedule,
 	getRoomData,
-	isFree,
-	fetchAndSaveAllSchedules,
-	getSchedules,
 }
