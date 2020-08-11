@@ -74,7 +74,7 @@ const getSchedules = (day, file, onFetch) => {
 	}
 }
 
-const getAllRoomsAvailable = (day, file, hour, onFetch) =>
+const getAllRoomsAvailable = (day, hour, file, onFetch) =>
 	getSchedules(day, file, onFetch)
 		.then(schedules => Object.values(schedules).filter(schedule => isFree(schedule, hour)))
 		.then(schedules => schedules.map(schedule => schedule.roomName))

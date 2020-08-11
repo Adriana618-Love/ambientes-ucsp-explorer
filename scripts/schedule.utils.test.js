@@ -27,7 +27,7 @@ describe('Shows all the rooms that are available by the date', () => {
 		}
 
 		expect.assertions(1)
-		return getAllRoomsAvailable(day, file, hour, onFetch)
+		return getAllRoomsAvailable(day, hour, file, onFetch)
 			.then(roomsAvailable => {
 				expect(roomsAvailable).toEqual(rooms.map(room => room.nombre))
 			})
@@ -43,7 +43,7 @@ describe('Shows all the rooms that are available by the date', () => {
 		}
 
 		expect.assertions(1)
-		return getAllRoomsAvailable(day, file, hour, onFetch)
+		return getAllRoomsAvailable(day, hour, file, onFetch)
 			.then(roomsAvailable => {
 				expect(roomsAvailable.includes('N419  (Cap.: 24)')).toEqual(false)
 			})
